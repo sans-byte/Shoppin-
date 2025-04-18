@@ -24,11 +24,13 @@ function App() {
         </AnimatePresence>
       </div>
 
-      <Header />
-      <main>
-        <ProductStack />
-      </main>
-      <Footer />
+      <div className="h-screen w-screen flex flex-col justify-between items-center ">
+        <Header />
+        <main>
+          <ProductStack />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

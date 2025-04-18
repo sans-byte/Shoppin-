@@ -16,8 +16,8 @@ export const SplashScreen: React.FC = () => {
           }}
         >
           <img
-            src="https://shoppin.app/_next/image?url=%2Fassets%2Fimages%2Flogo.webp&w=256&q=75"
-            className="w-40 h-40 object-contain"
+            src="https://shoppin.app/_next/image?url=%2Fassets%2Ficons%2Fstrawberry_icon.webp&w=64&q=75"
+            className="w-20 h-20 object-contain"
             alt="Shoppin'"
           />
         </motion.div>
