@@ -26,7 +26,7 @@ function App() {
 
       <div className="h-screen w-screen flex flex-col justify-between items-center ">
         <Header />
-        <main>
+        <main className="h-full w-full">
           <ProductStack />
         </main>
         <Footer />

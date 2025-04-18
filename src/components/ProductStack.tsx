@@ -4,7 +4,12 @@ import { ShoppinBackDrop } from "../utils/shoppinBackdrop";
 export const ProductStack: React.FC = () => {
   return (
     <>
-      <ShoppinBackDrop />
+      <div>
+        <div></div>
+        <section className="relative bottom-0">
+          <ShoppinBackDrop />
+        </section>
+      </div>
     </>
   );
 };
