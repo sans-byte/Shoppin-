@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 export const SplashScreen: React.FC = () => {
   return (
     <>
-      <div className="h-screen w-screen flex justify-center items-center">
+      <div className="h-screen w-screen fixed inset-0 z-50 flex items-center justify-center bg-white">
         <motion.div
           key="logo"
           initial={{ scale: 0 }}
