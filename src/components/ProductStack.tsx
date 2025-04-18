@@ -1,12 +1,15 @@
 import React from "react";
-import { ShoppinBackDrop } from "../utils/shoppinBackdrop";
+import { ProductCard } from "./ProductCard";
+import { products } from "../data/products";
 
 export const ProductStack: React.FC = () => {
   return (
     <>
-      <div className="relative h-full">
+      <div className="">
         <section className="flex justify-center items-center">
-          <ShoppinBackDrop />
+          {/* {products.map((product) => ( */}
+          <ProductCard product={products[1]} />
+          {/* ))} */}
         </section>
       </div>
     </>

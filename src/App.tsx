@@ -5,6 +5,7 @@ import "./App.css";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { ProductStack } from "./components/ProductStack";
+import { ShoppinBackDrop } from "./utils/shoppinBackdrop";
 
 function App() {
   const [splash, setSplash] = useState(true);
@@ -18,18 +19,17 @@ function App() {
 
   return (
     <>
-      <div>
-        <AnimatePresence>
-          {splash && <SplashScreen key="logo" />}
-        </AnimatePresence>
-      </div>
+      <AnimatePresence>{splash && <SplashScreen key="logo" />}</AnimatePresence>
 
       <div className="h-screen w-screen flex flex-col justify-between items-center ">
         <Header />
-        <main className="h-full w-full">
+        <main className="">
           <ProductStack />
         </main>
-        <Footer />
+        <section className="w-full relative">
+            <ShoppinBackDrop />
+          <Footer />
+        </section>
       </div>
     </>
   );
