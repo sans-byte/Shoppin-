@@ -9,7 +9,7 @@ type Prop = {
 export const Header: React.FC<Prop> = ({ liked }) => {
   return (
     <>
-      <header className="flex w-full h-14 shadow-md justify-center items-center px-3">
+      <header className="flex w-full h-14 shadow-md justify-center items-center ps-5">
         <div className="w-full md:w-3/4 lg:w-1/3 flex justify-between items-center">
           <section className="">
             <img
