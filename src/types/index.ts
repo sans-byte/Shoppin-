@@ -6,3 +6,10 @@ export interface Product {
   discountPercentage: number;
   imageURL: string;
 }
+
+export enum direction {
+  Left = "left",
+  Rigth = "right",
+  Up = "up",
+  None = "",
+}
