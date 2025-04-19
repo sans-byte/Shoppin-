@@ -2,7 +2,7 @@ import React from "react";
 
 export const ShoppinBackDrop: React.FC = () => {
   return (
-    <div className="pointer-events-none absolute w-full -z-10 bottom-10 md:bottom-2">
+    <div className="pointer-events-none absolute w-full -z-50 bottom-10 md:bottom-2">
       <svg
         className=""
         viewBox="0 0 971 160"

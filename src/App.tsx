@@ -5,7 +5,7 @@ import "./App.css";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { ProductStack } from "./components/ProductStack";
-import { ShoppinBackDrop } from "./utils/shoppinBackdrop";
+import { ShoppinBackDrop } from "./utils/ShoppinBackdrop";
 
 function App() {
   const [splash, setSplash] = useState(true);

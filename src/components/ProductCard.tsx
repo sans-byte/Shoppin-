@@ -4,9 +4,10 @@ import { currenctFormatter } from "../utils/currencyformatter";
 
 type Prop = {
   product: Product;
+  isActive: boolean;
 };
 
-export const ProductCard: React.FC<Prop> = ({ product }) => {
+export const ProductCard: React.FC<Prop> = ({ product, isActive }) => {
   const { brand, discountPercentage, id, imageURL, name, originalPrice } =
     product;
 
@@ -14,7 +15,9 @@ export const ProductCard: React.FC<Prop> = ({ product }) => {
   return (
     <>
       <div
-        className="rounded-md border-[0.5px] border-secondary-grey md:w-[30vw] w-[90vw] h-[70vh] m-4 overflow-hidden"
+        className={`rounded-md border-[0.5px] border-secondary-grey md:w-[30vw] w-[90vw] h-[70vh] overflow-hidden ${
+          isActive ? "z-20" : "z-10"
+        }`}
         key={id}
       >
         <div className="h-full w-full relative">
