@@ -41,13 +41,10 @@ export const ProductStack: React.FC<Prop> = ({ setLiked, setCart }) => {
     currentIndex + visibleCards
   );
 
-  console.log(currentIndex);
-
   const handleStartOver = () => {
     setCurrentIndex(0);
     setLiked(0);
     setCart(0);
-    console.log("clicked");
   };
 
   if (currentIndex == products.length) {
