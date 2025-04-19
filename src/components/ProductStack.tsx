@@ -41,9 +41,9 @@ export const ProductStack: React.FC = () => {
     console.log("clicked");
   };
 
-  if (currentIndex == 10) {
+  if (currentIndex == products.length) {
     return (
-      <section className="font-comfortaa flex justify-center items-center flex-col gap-4 -z-20 w-[80vw]">
+      <section className="font-comfortaa flex justify-center items-center flex-col gap-4 w-[80vw]">
         <div className="bg-gray-100 p-4 rounded-full mb-6 ">
           <ShoppingBag size={60} className="text-gray-400" />
         </div>
