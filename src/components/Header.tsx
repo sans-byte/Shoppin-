@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Search, Heart } from "lucide-react";
 import avatar from "../assets/avatar.jpg";
 
-export const Header: React.FC = () => {
+type Prop = {
+  liked: number;
+};
+
+export const Header: React.FC<Prop> = ({ liked }) => {
   return (
     <>
       <header className="flex w-full h-14 shadow-md justify-center items-center px-3">
@@ -27,9 +31,16 @@ export const Header: React.FC = () => {
             <button>
               <Search />
             </button>
-            <button>
-              <Heart />
-            </button>
+            <section className="flex justify-center items-center relative">
+              <button>
+                <Heart />
+              </button>
+              {liked > 0 && (
+                <span className="absolute bg-red-400 h-2 w-2 rounded-full -top-1 -right-2 text-white text-[10px] flex justify-center items-center p-[8px]">
+                  {liked}
+                </span>
+              )}
+            </section>
             <button className="rounded-full flex justify-center items-center h-8 w-8 border-[0.5px] overflow-hidden">
               <img src={avatar} alt="avatar" />
             </button>

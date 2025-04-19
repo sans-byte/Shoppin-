@@ -9,6 +9,8 @@ import { ShoppinBackDrop } from "./utils/ShoppinBackdrop";
 
 function App() {
   const [splash, setSplash] = useState(true);
+  const [liked, setLiked] = useState(0);
+  const [cart, setCart] = useState(0);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -22,13 +24,13 @@ function App() {
       <AnimatePresence>{splash && <SplashScreen key="logo" />}</AnimatePresence>
 
       <div className="h-screen w-screen flex flex-col justify-between items-center ">
-        <Header />
+        <Header liked={liked} />
         <main className="">
-          <ProductStack />
+          <ProductStack setLiked={setLiked} setCart={setCart} />
         </main>
         <section className="w-full relative">
           <ShoppinBackDrop />
-          <Footer />
+          <Footer cart={cart} />
         </section>
       </div>
     </>

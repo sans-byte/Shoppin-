@@ -1,11 +1,16 @@
 import React, { useCallback, useState } from "react";
 import { products } from "../data/products";
-import { ShoppingBag } from "lucide-react";
+import { ListEnd, ShoppingBag } from "lucide-react";
 import { SwipableCard } from "./SwipableCard";
 import { Direction } from "../types";
 import { AnimatePresence } from "motion/react";
 
-export const ProductStack: React.FC = () => {
+type Prop = {
+  setLiked: any;
+  setCart: any;
+};
+
+export const ProductStack: React.FC<Prop> = ({ setLiked, setCart }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const visibleCards = 3;
 
@@ -18,9 +23,11 @@ export const ProductStack: React.FC = () => {
           break;
         case Direction.Left:
           console.log(`Liked Product ID : ${productId}`);
+          setLiked((pre: number) => pre + 1);
           break;
         case Direction.Up:
           console.log(`Add To Cart Product ID : ${productId}`);
+          setCart((pre: number) => pre + 1);
           break;
         default:
           break;
@@ -38,6 +45,8 @@ export const ProductStack: React.FC = () => {
 
   const handleStartOver = () => {
     setCurrentIndex(0);
+    setLiked(0);
+    setCart(0);
     console.log("clicked");
   };
 
