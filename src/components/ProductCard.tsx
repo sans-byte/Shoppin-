@@ -17,8 +17,7 @@ export const ProductCard: React.FC<Prop> = ({
   onSwipe,
   index,
 }) => {
-  const { brand, discountPercentage, id, imageURL, name, originalPrice } =
-    product;
+  const { brand, discountPercentage, imageURL, name, originalPrice } = product;
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -27,7 +26,7 @@ export const ProductCard: React.FC<Prop> = ({
   const rotate = useTransform(x, [-200, 0, 200], [-15, 0, 15]);
 
   const handleDragEnd = (
-    event: MouseEvent | TouchEvent | PointerEvent,
+    _event: MouseEvent | TouchEvent | PointerEvent,
     info: PanInfo
   ) => {
     const xOffset = info.offset.x;
