@@ -1,5 +1,5 @@
 ## Can see the deployed version at
-https://www.shoppin-snowy.vercel.app
+[https://www.shoppin-snowy.vercel.app](https://shoppin-snowy.vercel.app/)
 
 # React + TypeScript + Vite
 
