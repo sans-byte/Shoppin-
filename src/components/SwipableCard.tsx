@@ -19,7 +19,12 @@ export const SwipableCard: React.FC<Props> = ({
     <>
       <div className="flex justify-center items-center relative">
         <div className="absolute">
-          <ProductCard product={product} isActive={isActive} />
+          <ProductCard
+            product={product}
+            isActive={isActive}
+            onSwipe={onSwipe}
+            index={index}
+          />
         </div>
       </div>
     </>
