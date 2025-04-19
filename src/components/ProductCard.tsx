@@ -14,12 +14,7 @@ export const ProductCard: React.FC<Prop> = ({ product, isActive }) => {
   // g:w-[32vw] md:w-[50vw] sm:w-[56vw] w-[88vw]
   return (
     <>
-      <div
-        className={`rounded-md border-[0.5px] border-secondary-grey md:w-[30vw] w-[90vw] h-[70vh] overflow-hidden ${
-          isActive ? "z-20" : "z-10"
-        }`}
-        key={id}
-      >
+      <div className="rounded-md border-[0.5px] border-secondary-grey md:w-[30vw] w-[90vw] h-[70vh] m-4 overflow-hidden">
         <div className="h-full w-full relative">
           <img
             src={imageURL}

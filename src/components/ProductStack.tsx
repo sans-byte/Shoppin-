@@ -36,7 +36,7 @@ export const ProductStack: React.FC = () => {
       <div className="relative flex justify-center items-center">
         <section className="flex justify-center items-center">
           <AnimatePresence>
-            {visibleProducts.map((product, index) => (
+            {visibleProducts.reverse().map((product, index) => (
               <SwipableCard
                 product={product}
                 key={product.id}

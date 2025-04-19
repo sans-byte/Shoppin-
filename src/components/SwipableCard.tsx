@@ -15,8 +15,6 @@ export const SwipableCard: React.FC<Props> = ({
   isActive,
   index,
 }) => {
-  console.log(isActive);
-
   return (
     <>
       <div className="flex justify-center items-center relative">
