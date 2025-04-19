@@ -1,3 +1,7 @@
+# Executable APK file
+in project root find : 
+/APK/shoppin.apk
+
 ## Can see the deployed version at
 [https://www.shoppin-snowy.vercel.app](https://shoppin-snowy.vercel.app/)
 
