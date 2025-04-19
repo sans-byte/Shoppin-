@@ -7,7 +7,7 @@ export interface Product {
   imageURL: string;
 }
 
-export enum direction {
+export enum Direction {
   Left = "left",
   Rigth = "right",
   Up = "up",

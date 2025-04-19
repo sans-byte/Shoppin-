@@ -14,7 +14,7 @@ export const ProductCard: React.FC<Prop> = ({ product }) => {
   return (
     <>
       <div
-        className="rounded-md border-[0.5px] border-secondary-grey md:w-1/3 m-4 overflow-hidden"
+        className="rounded-md border-[0.5px] border-secondary-grey md:w-[30vw] w-[90vw] h-[70vh] m-4 overflow-hidden"
         key={id}
       >
         <div className="h-full w-full relative">
