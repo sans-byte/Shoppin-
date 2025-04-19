@@ -10,10 +10,11 @@ export const ProductCard: React.FC<Prop> = ({ product }) => {
   const { brand, discountPercentage, id, imageURL, name, originalPrice } =
     product;
 
+  // g:w-[32vw] md:w-[50vw] sm:w-[56vw] w-[88vw]
   return (
     <>
       <div
-        className="rounded-md border-[0.5px] border-secondary-grey mx-6 overflow-hidden"
+        className="rounded-md border-[0.5px] border-secondary-grey md:w-1/3 m-4 overflow-hidden"
         key={id}
       >
         <div className="h-full w-full relative">
