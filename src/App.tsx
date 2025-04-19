@@ -27,7 +27,7 @@ function App() {
           <ProductStack />
         </main>
         <section className="w-full relative">
-            <ShoppinBackDrop />
+          <ShoppinBackDrop />
           <Footer />
         </section>
       </div>
