@@ -1,4 +1,4 @@
-import { Heart, Home, Menu, ShoppingBag, History } from "lucide-react";
+import { Heart, Home, Menu, ShoppingBag } from "lucide-react";
 import React from "react";
 
 type Prop = {

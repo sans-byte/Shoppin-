@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import { products } from "../data/products";
-import { ListEnd, ShoppingBag } from "lucide-react";
+import { ShoppingBag } from "lucide-react";
 import { SwipableCard } from "./SwipableCard";
 import { Direction } from "../types";
 import { AnimatePresence } from "motion/react";
