@@ -2,15 +2,6 @@ import { Product } from "../types";
 
 export const products: Product[] = [
   {
-    id: 1,
-    name: "floral print v-neck top",
-    brand: "shaye",
-    originalPrice: 4977,
-    discountPercentage: 40,
-    imageURL:
-      "https://assets.ajio.com/medias/sys_master/root/20240209/UUe4/65c6542805ac7d77bb4c05c5/-473Wx593H-467057476-peach-MODEL.jpg",
-  },
-  {
     id: 2,
     name: "morgan blouse",
     brand: "kazo",
@@ -36,6 +27,15 @@ export const products: Product[] = [
     discountPercentage: 25,
     imageURL:
       "https://cdn.shopify.com/s/files/1/0261/2386/2082/files/KZ01319YELLOWMULTI.jpg?v=1743161024",
+  },
+  {
+    id: 1,
+    name: "floral print v-neck top",
+    brand: "shaye",
+    originalPrice: 4977,
+    discountPercentage: 40,
+    imageURL:
+      "https://assets.ajio.com/medias/sys_master/root/20240209/UUe4/65c6542805ac7d77bb4c05c5/-473Wx593H-467057476-peach-MODEL.jpg",
   },
   {
     id: 5,
